@@ -34,3 +34,24 @@ if (y2_length_unit == 'm') {
 combined_weight_per_meter <- y1_weight_per_meter + y2_weight_per_meter
 
 meters_per_100g <- 100 / combined_weight_per_meter
+
+standard_weight <- ""
+
+break_tf <- FALSE
+
+length_100g$Low.Length.per.100.gr[5]
+
+for (i in 1:dim(length_100g)[1]){
+  while (break_tf = FALSE){
+    if (length_100g$Low.Length.per.100.gr[i] > meters_per_100g) {
+      row = i - 1
+      standard_weight <- (length_100g$Standard.Weight[row])
+      print(standard_weight)
+      break_tf <- TRUE
+    }else{
+      print("not the weight, yet")
+    }
+  }
+}
+
+standard_weight
