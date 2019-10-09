@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yarn Weight Calculator</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Yarn Weight Calculator</h1>
+      <h2>Want to hold multiple strands together?</h2>
+    </div>
+  </div>
+
+
+  <section id="input">
+
+    <h3>Figure out the new weight here!</h3>
+    <div class="container-fluid yarn-input">
+      <div class="row">
+        <div class="col-md yarn-input">
+          <h4>Yarn 1</h4>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Weight</span>
+            </div>
+            <input class="text-input" type="text" placeholder="weight" id="yarn1weight" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y1weight-label" type="button" data-toggle="dropdown" name="y1-weight" value="grams">grams</button>
+              <div class="dropdown-menu y1-weight-label" role="menu">
+                <a class="dropdown-item" href="#" data-value="grams">grams</a>
+                <a class="dropdown-item" href="#" data-value="ounces">ounces</a>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Length</span>
+            </div>
+            <input class="text-input" type="text" placeholder="length" id="yarn1length" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y1length-label" type="button" data-toggle="dropdown" name="y1-length" value="meters">meters</button>
+              <div class="dropdown-menu y1-length-label" role="menu">
+                <a class="dropdown-item" href="#" data-value="meters">meters</a>
+                <a class="dropdown-item" href="#" data-value="yards">yards</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md yarn-input">
+          <h4>Yarn 2</h4>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Weight</span>
+            </div>
+            <input class="text-input" type="text" placeholder="weight" id="yarn2weight" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y2weight-label" type="button" data-toggle="dropdown" name="y2-weight" value="grams">grams</button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">grams</a>
+                <a class="dropdown-item" href="#">ounces</a>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Length</span>
+            </div>
+            <input class="text-input" type="text" placeholder="length" id="yarn2length" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y2length-label" type="button" data-toggle="dropdown" name="y2-length" value="meters">meters</button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">meters</a>
+                <a class="dropdown-item" href="#">yards</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md yarn-input">
+          <h4>Yarn 3</h4>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Weight</span>
+            </div>
+            <input class="text-input" type="text" placeholder="weight" id="yarn3weight" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y3width-label" type="button" data-toggle="dropdown" name="y3-weight" value="grams">grams</button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">grams</a>
+                <a class="dropdown-item" href="#">ounces</a>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Length</span>
+            </div>
+            <input class="text-input" type="text" placeholder="length" id="yarn3length" value="">
+            <div class="input-group-append">
+              <button class="btn btn-outline-light dropdown-toggle btn-y3length-label" type="button" data-toggle="dropdown" name="y3-length" value="meters">meters</button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">meters</a>
+                <a class="dropdown-item" href="#">yards</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid calc-btn-div">
+      <button type="button" class="btn btn-outline-light calculate-btn">Calculate!</button>
+    </div>
+
+
+  </section>
+
+  <section id="results">
+    <h3>Results:</h3>
+    <div class="container results-div">
+      <div class="row">
+        <div class="col-md">
+          <h4>New Yarn Weight:</h4>
+          <p id="result-text">Enter information for at least 2 yarns above</p>
+        </div>
+        <div class="col-sm results-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Per</th>
+                <th>Meters</th>
+                <th>Yards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 Gram</td>
+                <td id="1gr-meter">---</td>
+                <td id="1gr-yard">---</td>
+              </tr>
+              <tr>
+                <td>50 Grams</td>
+                <td id="50gr-meter">---</td>
+                <td id="50gr-yard">---</td>
+              </tr>
+              <tr>
+                <td>100 Grams</td>
+                <td id="100gr-meter">---</td>
+                <td id="100gr-yard">---</td>
+              </tr>
+              <tr>
+                <td>200 Grams</td>
+                <td id="200gr-meter">---</td>
+                <td id="200gr-yard">---</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <!-- Add results for length by gram/ounce -->
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="calcYarnWeight.js" charset="utf-8"></script>
+</body>
+<footer>
+  <p>Standard Weight is approximate based on broad categories as defined in the following links: Craft Yarn Council and Knitting Naturally</p>
+  <p>Created by Kathryn (BackstageKatKnits on Ravelry), Kristin (kristinbietsch), and Jen (bluesweatergirl)</p>
+  <p>Photo by Kelly Sikkema on Unsplash</p>
+</footer>
+
+</html>

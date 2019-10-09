@@ -1,0 +1,76 @@
+/* The Hero Image */
+.hero-image {
+  background-image: url("images/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero-text {
+  padding: 3% 10% 20% 3%;
+  color: #23374d;
+
+}
+
+/* Input Section */
+#input {
+  padding: 3% 7% 3%;
+  background-color: rgba(35, 55, 77, .9);
+  color: #eeeeee;
+}
+
+.yarn-input {
+  padding: 2%;
+}
+
+.text-input {
+  width: 100px;
+  text-align: center;
+}
+
+.yarn-input {
+  text-align: center;
+}
+
+.input-group {
+  margin: 4%;
+}
+
+.calculate-btn {
+  border-color: #eeeeee;
+}
+
+.calc-btn-div {
+  text-align: center;
+  padding: 3% 3% 1%;
+}
+
+/* Results Section */
+#results {
+  background-color: #e5e5e5;
+  padding: 3% 7% 3%;
+  color: #23374d;
+}
+
+.results-div {
+  padding: 3%;
+  text-align: center;
+}
+
+.results-table {
+  font-size: .75rem;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background-color: #23374d;
+  color: #eeeeee;
+  font-size: .75rem;
+  padding: 2%;
+}
