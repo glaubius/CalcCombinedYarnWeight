@@ -1,3 +1,4 @@
+
 /* The Hero Image */
 .hero-image {
   background-image: url("images/kelly-sikkema-8A7qKkvm_ew-unsplash.jpg");
@@ -73,4 +74,12 @@ footer {
   color: #eeeeee;
   font-size: .75rem;
   padding: 2%;
+}
+
+.link {
+  color: #ef7b7b;
+}
+
+.link:hover {
+  color: #1089ff;
 }

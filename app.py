@@ -23,25 +23,42 @@ length_100g = {"7 - Jumbo, Roving": (0, 50),
                "0 - Lace, Cobweb": (600, 10000)
               }
 
-app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
+app.layout = html.Div(
+    style={'backgroundColor': colors['background']},
+    children=[
 
     # Title and credits
     html.Div([
         html.H1(
-            children='Calculate Weight of Combined Yarns',
+            children='Yarn Weight Calculator',
             style={
-                'textAlign': 'center',
+                'textAlign': 'left',
                 'color': colors['text']
             }
         ),
+        html.H3(
+            children='Want to hold multiple strands together?',
+            style={
+                'textAlign': 'left',
+                'color': colors['text']
+            }
+        )
 
     ]),
 
 
     # Inputs
     html.Div(children=[
+        html.H3(
+            children='Figure out the new weight here!',
+            style={
+                'textAlign': 'left',
+                'color': colors['text']
+            }
+        ),
+
         html.Div(className="row", children=[
-            html.H4(children='Yarn 1', style={
+            html.H5(children='Yarn 1', style={
                 'textAlign': 'left',
                 'color': colors['text']
                 }),
@@ -52,7 +69,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 }),
                 dcc.Input(
                     id='yarn1_weight',
-                    value='100', type='text',
+                    value='', type='text',
+                    style={'width': '100px'},
                     inputMode='numeric'),
                 #html.Div(id='output_yarn1_weight'),
                 dcc.RadioItems(
@@ -60,7 +78,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                     options=[{'label': i, 'value': i} for i in ['gr', 'oz']],
                     value='gr',
                     labelStyle={'display': 'inline-block'},
-                    style={'width': '48%', 'display': 'inline-block', 'fontSize': 20}
+                    style={'width': '48%', 'display': 'inline-block', 'fontSize': 20},
+
                 )
             ],
             style={'width': '48%', 'display': 'table-cell'}),
@@ -72,7 +91,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 }),
                 dcc.Input(
                     id='yarn1_length',
-                    value='800', type='text',
+                    value='', type='text',
+                    style={'width': '100px'},
                     inputMode='numeric'),
                 #html.Div(id='output_yarn1_length'),
                 dcc.RadioItems(
@@ -99,7 +119,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 }),
                 dcc.Input(
                     id='yarn2_weight',
-                    value='200', type='text',
+                    value='', type='text',
+                    style={'width': '100px'},
                     inputMode='numeric'),
                 #html.Div(id='output_yarn2_weight'),
                 dcc.RadioItems(
@@ -118,7 +139,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 }),
                 dcc.Input(
                     id='yarn2_length',
-                    value='420', type='text',
+                    value='', type='text',
+                    style={'width': '100px'},
                     inputMode='numeric'),
                 #html.Div(id='output_yarn2_length'),
                 dcc.RadioItems(
@@ -150,13 +172,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 
     # Output text
     html.Div(className="row", children=[
-        html.H4(children='Output:', style={
-            'textAlign': 'center',
+        html.H4(children='Results', style={
+            'textAlign': 'left',
             'color': colors['text']
             }),
         html.Div(children=[
             html.H5(id='output_state', style={
-                'textAlign': 'center',
+                'textAlign': 'left',
                 'color': colors['text']
             })
         ],
@@ -166,7 +188,8 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 
     # footer
     html.Div(className="row", children=[
-        html.H6(children='Created by Jen Glaubius, based on spreadsheet from Kathryn Lewis.')
+        html.H6(children='Standard Weight is approximate based on broad categories as defined in the following links:'),
+        html.H6(children='Created by Kathryn (BackstageKatKnits on Ravelry), Kristin (kristinbietsch), and Jen (bluesweatergirl)')
     ])
 
 ])
